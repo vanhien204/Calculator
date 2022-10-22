@@ -12,7 +12,7 @@ namespace Calculator
             int a, b, KetQua;
             a = int.Parse(txtA.Text);
             b = int.Parse(txtB.Text);
-            KetQua = a + b;
+            KetQua = a - b;
             txtKetQua.Text= KetQua.ToString();
         }
     }

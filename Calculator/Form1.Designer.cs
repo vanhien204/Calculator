@@ -36,11 +36,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCong
             // 
-            this.btCong.Location = new System.Drawing.Point(381, 251);
+            this.btCong.Location = new System.Drawing.Point(405, 250);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(67, 51);
             this.btCong.TabIndex = 0;
@@ -105,6 +106,16 @@
             this.txtKetQua.Size = new System.Drawing.Size(196, 27);
             this.txtKetQua.TabIndex = 2;
             // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(326, 250);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(67, 51);
+            this.btTru.TabIndex = 0;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btCong_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -117,6 +128,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Name = "Form1";
             this.Text = "Tinh Toan";
@@ -135,5 +147,6 @@
         private Label label4;
         private TextBox txtB;
         private TextBox txtKetQua;
+        private Button btTru;
     }
 }
